@@ -1250,10 +1250,9 @@ html[data-theme-dark] {
 }
 
 .burger {
-  position: relative;
   z-index: 20;
 }
-.burger__open, .burger__close, .burger__menu {
+.burger, .burger__open, .burger__close, .burger__menu {
   position: fixed;
 }
 .burger__open, .burger__close {
@@ -1293,9 +1292,9 @@ html[data-theme-dark] {
 .burger__menu {
   top: 0;
   left: 0;
-  width: 96vw;
+  width: 100vw;
   height: 100vh;
-  transform: translateX(-100vw);
+  transform: translateX(-110vw);
   padding: 0 16px 16px 16px;
   background: var(--main-page-bgr);
   display: grid;

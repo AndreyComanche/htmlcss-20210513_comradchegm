@@ -1,8 +1,19 @@
-const changer = document.querySelectorAll('.theme-toggler .toggler__native');
+const changerHdr = document.getElementById('theme-changer-hdr');
+const changerBrg = document.getElementById('theme-changer-brg');
 const html = document.documentElement;
 
-for (let i = 0; i < changer.length; i++) {
-    changer[i].addEventListener('change', function (event) {
-        html.toggleAttribute('data-theme-dark');
-    });
-}
+toggleDark = function (event) {
+    target = event.currentTarget;
+    html.toggleAttribute('data-theme-dark');
+    if (target === changerHdr) {
+        if (target.checked !== changerBrg.checked) {
+            changerBrg.checked = target.checked;
+        }
+    } else {
+        if (target.checked !== changerHdr.checked) {
+            changerHdr.checked = target.checked;
+        }
+    }
+};
+changerHdr.addEventListener('change', toggleDark);
+changerBrg.addEventListener('change', toggleDark);

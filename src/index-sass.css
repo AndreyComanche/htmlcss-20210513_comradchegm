@@ -379,6 +379,10 @@ body {
   --invalid: #F03D3E;
   --success: var(--blue);
   --disabled: #0000003f;
+  --skeleton-bgr:
+  linear-gradient(
+      92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%
+  );
 }
 
 html[data-theme-dark] {
@@ -844,8 +848,12 @@ html[data-theme-dark] {
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+  background: var(--skeleton-bgr);
   background-size: 200%;
+}
+
+html[data-theme-dark] .skeleton__avatar, html[data-theme-dark] .skeleton__item {
+  filter: invert(87%);
 }
 
 .tooltip {

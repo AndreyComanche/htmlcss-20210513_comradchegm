@@ -59,6 +59,11 @@ $page-width: 1110px;
     --invalid: #F03D3E;
     --success: var(--blue);
     --disabled: #0000003f;
+
+    --skeleton-bgr:
+    linear-gradient(
+        92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%
+    );
 }
 
 html[data-theme-dark] {

@@ -108,7 +108,7 @@ pre .preloader div {
     animation-fill-mode: forwards
 }
 
-pre {
+html[data-theme-dark] pre {
     background-color: #000;
     word-wrap: break-word;
     margin: 0px;
@@ -166,6 +166,10 @@ pre .keyword.namespace, pre .entity.name.class, code .keyword.namespace, code .e
 pre .constant.numeric, code .constant.numeric {
     color: #00D;
     font-weight: bold
+}
+
+html[data-theme-dark] pre .string, html[data-theme-dark] pre .comment.docstring, html[data-theme-dark] code .string, html[data-theme-dark] code .comment.docstring, html[data-theme-dark] .string.regexp, code .string.regexp {
+    background-color: #000;
 }
 
 pre .string, pre .comment.docstring, code .string, code .comment.docstring {

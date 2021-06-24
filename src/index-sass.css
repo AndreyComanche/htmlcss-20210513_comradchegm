@@ -1568,7 +1568,7 @@ pre .preloader div {
   animation-fill-mode: forwards;
 }
 
-pre {
+html[data-theme-dark] pre {
   background-color: #000;
   word-wrap: break-word;
   margin: 0px;
@@ -1626,6 +1626,10 @@ pre .keyword.namespace, pre .entity.name.class, code .keyword.namespace, code .e
 pre .constant.numeric, code .constant.numeric {
   color: #00D;
   font-weight: bold;
+}
+
+html[data-theme-dark] pre .string, html[data-theme-dark] pre .comment.docstring, html[data-theme-dark] code .string, html[data-theme-dark] code .comment.docstring, html[data-theme-dark] .string.regexp, code .string.regexp {
+  background-color: #000;
 }
 
 pre .string, pre .comment.docstring, code .string, code .comment.docstring {
@@ -1752,6 +1756,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   background: var(--main-background);
   border-radius: 12px;
   color: var(--second-color);
+  margin: 0 16px;
 }
 .component__title {
   font-size: 20px;
@@ -1771,7 +1776,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
 }
 .component__code {
   border-top: 1px solid var(--grey-2);
-  padding: 0 16px;
+  padding: 0 16px 16px 16px;
 }
 .component__preview_button, .component__preview_accordion, .component__preview_modal, .component__preview_avatar, .component__preview_checkbox, .component__preview_radio, .component__preview_toggler, .component__preview_input {
   display: flex;
@@ -1819,6 +1824,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   }
   .component__code {
     padding: 0 48px 64px 42px;
+    margin: 0;
   }
 }
 

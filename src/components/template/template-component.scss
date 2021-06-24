@@ -5,6 +5,7 @@
     background: var(--main-background);
     border-radius: 12px;
     color: var(--second-color);
+    margin: 0 16px;
 
     &__title {
         font-size: 20px;
@@ -24,7 +25,7 @@
     }
     &__code {
         border-top: 1px solid var(--grey-2);
-        padding: 0 16px;
+        padding: 0 16px 16px 16px;
     }
     &__preview_button,
     &__preview_accordion,
@@ -81,6 +82,7 @@
         }
         &__code {
             padding: 0 48px 64px 42px;
+            margin: 0;
         }
     }
 }

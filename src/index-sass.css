@@ -1391,6 +1391,8 @@ html[data-theme-dark] .skeleton__avatar, html[data-theme-dark] .skeleton__item {
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
+  background: var(--main-background);
+  color: var(--main-color);
 }
 .input__label {
   font-size: 12px;

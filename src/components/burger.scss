@@ -37,6 +37,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: var(--main-color);
     }
     &__menu, &__menu[data-open] {
         transition: transform 200ms ease-in-out;
@@ -94,11 +95,10 @@
     &__menu[data-open] {
         transform: translateX(0);
     }
-
-    &__menu[data-open] ~ &__open {
+    &__menu[data-open]~&__open {
         visibility: hidden;
     }
-    &__menu[data-open] ~ &__close {
+    &__menu[data-open]~&__close {
         visibility: visible;
     }
     &__theme-title {

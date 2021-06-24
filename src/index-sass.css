@@ -1286,6 +1286,7 @@ html[data-theme-dark] {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--main-color);
 }
 .burger__menu, .burger__menu[data-open] {
   transition: transform 200ms ease-in-out;

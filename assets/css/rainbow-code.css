@@ -148,6 +148,11 @@ pre .keyword.operator, code .keyword.operator {
     font-weight: normal
 }
 
+html[data-theme-dark] pre .keyword.operator, html[data-theme-dark] code .keyword.operator {
+    color: #fff;
+    font-weight: normal
+}
+
 pre .constant.language, code .constant.language {
     color: #038;
     font-weight: bold
@@ -168,7 +173,7 @@ pre .constant.numeric, code .constant.numeric {
     font-weight: bold
 }
 
-html[data-theme-dark] pre .string, html[data-theme-dark] pre .comment.docstring, html[data-theme-dark] code .string, html[data-theme-dark] code .comment.docstring, html[data-theme-dark] .string.regexp, code .string.regexp {
+html[data-theme-dark] pre .string, html[data-theme-dark] pre .comment.docstring, html[data-theme-dark] code .string, html[data-theme-dark] code .comment.docstring, html[data-theme-dark] .string.regexp, html[data-theme-dark] code .string.regexp {
     background-color: #000;
 }
 
